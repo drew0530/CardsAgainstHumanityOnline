@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
   <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/normalize.css" type="text/css" media="all" />
@@ -7,19 +8,27 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
     <title>Cards Against Humanity</title>
   </head>
+
   <body>
     <div id="main">
+
       <header>
-        <nav id="topbar">
-          <a>Login / Sign Up</a>
-          <a>Options</a>
-          <a>Contact us</a>
+        <nav class="topbar">
+          <div class="topbar-left">
+            <a href="/">Cards Against Humanity</a>
+          </div>
+          <div class="topbar-right">
+            <a class="button-hover">Login / Sign Up</a>
+            <a class="button-hover">Options</a>
+            <a class="button-hover">Contact us</a>
+          </div>
         </nav>
           <h1>Play</h1>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
           <polygon fill="white" points="0,100 100,0 100,100"/>
         </svg>
       </header>
+
       <div class="info-box-container">
         <div id="i-box-1" class="info-box">
           <h2>Free To Play</h2>
@@ -34,17 +43,24 @@
           <p>Are you an awful person? Do people regularly describe you as offensive? If you answered yes, this game is for you!</p>
         </div>
       </div>
+
       <div class="card-container">
-        <div class="card">
-          <a class="clickable" href="/play"></a>
+        <div class="card card-hover">
+          <a class="clickable" href="/singleplayer.html">Play Singleplayer</a>
         </div>
-        <div class="card">
-          <a class="clickable" href="/"></a>
+        <div class="card card-hover">
+          <a class="clickable" href="/multiplayer.html">Play Multiplayer</a>
         </div>
-        <div class="card">
-          <a class="clickable" href="/"></a>
+        <div class="card card-hover">
+          <a class="clickable" href="/card-packs.html">View Available Card Packs</a>
         </div>
       </div>
+
+      <footer>
+        <p>Andrew Williamson, 2018</p>
+      </footer>
+  
     </div>
   </body>
+  
 </html>

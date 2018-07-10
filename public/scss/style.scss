@@ -3,20 +3,43 @@ html {
   font-size: 16px;
 }
 
-#topbar{
-  position: absolute;
-  right: 16px;
-  top: 16px;
-  a {
+footer {
+  height: 150px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button-hover:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.card-hover:hover {
+  transform: translate(0, -25px);
+}
+
+.topbar{
+  display: flex;
+  position: relative;
+  top: 16px; 
+  width: 100%;
+  
+  .topbar-right{
+    position: absolute;
+    right: 16px;
+  }
+  .topbar-left{
+    position: absolute;
+    left:16px;
+  }
+  * a {
     text-decoration: none;
     color: white; 
     padding: 8px;
     border-radius: 3px;
-    transition: background 0.1s;
-  }
-  a:hover {
-    background: rgba(255, 255, 255, 0.2);
-  }
+  }  transition: background 0.1s;
+  
 }
 
 header {
@@ -89,12 +112,25 @@ svg {
   align-items: flex-end;
   justify-content: center;
   .card {
-    margin: -15px 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: -40px 24px;
+    padding: 20px;
     height: 300px;
-    width: 300px;
+    width: 250px;
     background: rgb(228, 228, 228);
     border-radius: 15px;
     box-shadow: -16px 8px 0px rgb(19, 19, 19);
+    transition: 0.3s;
+    transition-timing-function: ease-out;
+
+    a {
+      text-decoration: none;
+      color: black;
+      font-weight: 600;
+      font-size: 20px;
+    }
     .clickable {
       width: 100%;
       height: 100%;
