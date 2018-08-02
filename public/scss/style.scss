@@ -21,8 +21,11 @@ footer {
 
 .topbar{
   display: flex;
-  position: relative;
-  top: 16px; 
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  height: 18px;
+  padding: 16px 0px;
   width: 100%;
   
   .topbar-right{
@@ -43,14 +46,13 @@ footer {
 }
 
 header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   position: relative;
-  height: 400px;
-  background-image: linear-gradient(#1034a6, #000080);
-}
-
-header h1 {
+  height: 250px;
   color: white;
-  margin: 0;
+  background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
 }
 
 h1, h2, h3, h4 ,h5 {
@@ -61,7 +63,6 @@ h1 {
   font-size: 60px;
   text-align: center;
   vertical-align: middle;
-  line-height: 300px;
 }
 
 h2 {
@@ -83,9 +84,9 @@ svg {
 }
 
 .info-box-container {
-  margin: 0px 10vw;
+  margin: 24px 5vw;
   display:flex;
-  width: 80vw;
+  align-items: center;
   justify-content:center;
 }
 
@@ -102,15 +103,20 @@ svg {
   border-right: 1px solid lightgrey;
 }
 
+.content {
+  display: flex;
+  
+}
+
 .card-container {
-  margin-top: 40px;
   width: 100vw;
-  height: 350px;
+  height: 0px;
   background: #232323;
   overflow: hidden;
   display: flex;
   align-items: flex-end;
   justify-content: center;
+  transition: .6s;
   .card {
     display: flex;
     justify-content: center;
@@ -137,3 +143,24 @@ svg {
     }
   }
 }
+
+.title {
+  padding: 48px;
+}
+
+#fp-header {
+  height: 400px;
+}
+
+.expand-button {
+  border-radius: 25px;
+  bottom: -25px;
+  height: 50px;
+  width: 50px;
+  position: absolute;
+}
+
+.expanded {
+  height: 350px;
+}
+

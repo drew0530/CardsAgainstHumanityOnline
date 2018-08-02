@@ -6,22 +6,23 @@
     <link rel="stylesheet" href="css/normalize.css" type="text/css" media="all" />
     <link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
+    <script type="text/javascript" src="./scripts/require.js"></script>
+    <script type="text/javascript" src="./scripts/main.js"></script>
     <title>Cards Against Humanity</title>
   </head>
 
   <body>
     <div id="main">
 
-      <header>
+      <header id="fp-header">
         <nav class="topbar">
           <div class="topbar-left"></div>
           <div class="topbar-right">
             <a class="button-hover">Login / Sign Up</a>
             <a class="button-hover">Options</a>
-            <a class="button-hover">Contact us</a>
           </div>
         </nav>
-          <h1>Cards Against Humanity</h1>
+          <h1 class="title">Cards Against Humanity</h1>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
           <polygon fill="white" points="0,100 100,0 100,100"/>
         </svg>
@@ -42,7 +43,7 @@
         </div>
       </div>
 
-      <div class="card-container">
+      <div class="card-container expanded">
         <div class="card card-hover">
           <a class="clickable" href="/singleplayer.html">Play Singleplayer</a>
         </div>
@@ -60,5 +61,8 @@
 
     </div>
   </body>
+  <script>
+    startGame();
+  </script>
 
 </html>

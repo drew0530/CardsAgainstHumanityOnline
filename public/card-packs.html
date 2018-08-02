@@ -6,6 +6,8 @@
     <link rel="stylesheet" href="css/normalize.css" type="text/css" media="all" />
     <link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
+    <script type="text/javascript" src="./scripts/jquery.js"></script>
+    <script type="text/javascript" src="./scripts/main.js"></script>
     <title>Cards Against Humanity</title>
   </head>
 
@@ -19,29 +21,15 @@
           </div>
           <div class="topbar-right">
             <a class="button-hover">Login / Sign Up</a>
-            <a class="button-hover">Options</a>
-            <a class="button-hover">Contact us</a>
+            <a class="button-hover">Options</a>xs
           </div>
         </nav>
-          <h1>Play</h1>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
-          <polygon fill="white" points="0,100 100,0 100,100"/>
-        </svg>
+        <h1 class="title">Card Packs</h1>
+        <button class="expand-button" onclick="$('.card-container').toggleClass('expanded')">V</button>
       </header>
 
-      <div class="info-box-container">
-        <div id="i-box-1" class="info-box">
-          <h2>Free To Play</h2>
-          <p>Play with your friends, without breaking the bank. In fact, don't even touch that wallet! Don't even think about it.</p>
-        </div>
-        <div id="i-box-2" class="info-box">
-          <h2>Better With Friends</h2>
-          <p>The more, the merrier! Invite your friends and play, or join a random online session and make some new ones!</p>
-        </div>
-        <div id="i-box-3" class="info-box">
-          <h2>For Horrible People</h2>
-          <p>Are you an awful person? Do people regularly describe you as offensive? If you answered yes, this game is for you!</p>
-        </div>
+      <div class="content">
+        <h2>Currently Included Card Packs / Expansions</h2>
       </div>
 
       <div class="card-container">

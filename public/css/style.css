@@ -17,8 +17,11 @@ footer {
 
 .topbar {
   display: flex;
-  position: relative;
-  top: 16px;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  height: 18px;
+  padding: 16px 0px;
   width: 100%;
   transition: background 0.1s; }
   .topbar .topbar-right {
@@ -34,13 +37,13 @@ footer {
     border-radius: 3px; }
 
 header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   position: relative;
-  height: 400px;
-  background-image: linear-gradient(#1034a6, #000080); }
-
-header h1 {
+  height: 250px;
   color: white;
-  margin: 0; }
+  background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12); }
 
 h1, h2, h3, h4, h5 {
   font-weight: 400; }
@@ -48,8 +51,7 @@ h1, h2, h3, h4, h5 {
 h1 {
   font-size: 60px;
   text-align: center;
-  vertical-align: middle;
-  line-height: 300px; }
+  vertical-align: middle; }
 
 h2 {
   margin: 0px 0px 16px;
@@ -67,9 +69,9 @@ svg {
   /* set height to pixels if you want angle to change with screen width */ }
 
 .info-box-container {
-  margin: 0px 10vw;
+  margin: 24px 5vw;
   display: flex;
-  width: 80vw;
+  align-items: center;
   justify-content: center; }
 
 .info-box {
@@ -82,15 +84,18 @@ svg {
   border-left: 1px solid lightgrey;
   border-right: 1px solid lightgrey; }
 
+.content {
+  display: flex; }
+
 .card-container {
-  margin-top: 40px;
   width: 100vw;
-  height: 350px;
+  height: 0px;
   background: #232323;
   overflow: hidden;
   display: flex;
   align-items: flex-end;
-  justify-content: center; }
+  justify-content: center;
+  transition: .6s; }
   .card-container .card {
     display: flex;
     justify-content: center;
@@ -112,3 +117,19 @@ svg {
     .card-container .card .clickable {
       width: 100%;
       height: 100%; }
+
+.title {
+  padding: 48px; }
+
+#fp-header {
+  height: 400px; }
+
+.expand-button {
+  border-radius: 25px;
+  bottom: -25px;
+  height: 50px;
+  width: 50px;
+  position: absolute; }
+
+.expanded {
+  height: 350px; }
